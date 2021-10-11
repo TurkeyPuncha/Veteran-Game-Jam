@@ -87,6 +87,7 @@ public class LaunchedIngredientEvent : TEventBase
         Ingredient = xform;
     }
 }
+
 public class IngredientUpgradedEvent : TEventBase
 {
     public Transform Ingredient { get; set; }
@@ -107,3 +108,13 @@ public class IngredientDeletedEvent : TEventBase
     }
 }
 
+
+public class CelebrateEvent : TEventBase
+{
+    public Transform Ingredient { get; set; }
+
+    public CelebrateEvent(Transform xform)
+    {
+        Ingredient = xform;
+    }
+}
